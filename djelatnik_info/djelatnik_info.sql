@@ -1,4 +1,4 @@
-# C:\xampp\mysql\bin>mysql -uroot --default_character_set=utf8 < C:\Users\Alen\Documents\GitHub\Alen87\baze_zadaca\djelatnik_info\djelatnik_info.sql
+# C:\xampp\mysql\bin>mysql -uroot --default_character_set=utf8 < C:\Users\Alen\Documents\GitHub\Alen87\zavrsni_rad\djelatnik_info\djelatnik_info.sql
 
 drop database if exists djelatnik_info;
 create database djelatnik_info;
@@ -7,7 +7,8 @@ use djelatnik_info;
 
 create table djelatnik(
   sifra int not null primary key auto_increment,
-  ime_prezime varchar(50) not null,
+  ime varchar(40) not null,
+  prezime varchar(40) not null,
   oib char(11) not null,
   kontakt varchar(30) not null,
   email varchar(30),
@@ -48,7 +49,8 @@ create table sanitarna_iskaznica(
     create table djelatnik_edukacija (
         sifra int not null primary key auto_increment,
         djelatnik int,
-        edukacija int
+        edukacija int,
+        ocjena varchar(40)
     );
 
      #definiranje vanjskih  kljuceva
