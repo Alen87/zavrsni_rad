@@ -59,3 +59,11 @@ create table sanitarna_iskaznica(
     alter table mobitel add foreign key (djelatnik) references djelatnik(sifra);
     alter table djelatnik_edukacija add foreign key (djelatnik) references djelatnik(sifra);
     alter table djelatnik_edukacija add foreign key (edukacija) references edukacija(sifra);
+
+insert into djelatnik(sifra,ime,prezime,oib,kontakt,email,pocetak_rada,loyality_kartica,radna_odjeca_obuca,ugovor,zavrseno_zanimanje)
+values (null,'Danko','Štefančić','57493056784','092/92998488','danko.štefančić@live.com','2015-09-25','5647893054728','hlače 2kom 52,majica 3kom L,papuče 42','na neodređeno','Autoelektričar');
+
+
+
+
+
