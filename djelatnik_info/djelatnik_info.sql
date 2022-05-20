@@ -14,7 +14,7 @@ create table djelatnik(
   email varchar(30),
   pocetak_rada datetime,
   loyality_kartica char(13) not null,
-  radna_odjeca_obuca varchar(50),
+  radna_odjeca_obuca varchar(100),
   ugovor varchar(30),
   zavrseno_zanimanje varchar(50)
 );
@@ -73,9 +73,16 @@ values (null,'Danko','Štefančić','57493056784','092/9299848','danko.štefanč
        (null,'Igor','Horvat','85475698567','098/8790654','igor.horvat@live.com',
        '2007-04-21','9854776735645','hlače 2kom 50,majica 3kom L,papuče 44','na neodređeno','Pekar'),      
        (null,'Branimir','Simić','22375889465','098/6757745','branimir.simic@gmail.com',
-       '2015-03-02','9578784765647','hlače zimske 2kom 50,majica 3kom L,papuče 44,duksa L','vrijedi do 01.12.2022  ','Prehrambeni tehničar');      
+       '2015-03-02','9578784765647','hlače zimske 2kom 50,majica 3kom L,cipele 44,duksa L','vrijedi do 30.11.2022  ','Prehrambeni tehničar'),      
+       (null,'Mario','Šteko','67589456378','091/2233456','mario.steko@gmail.com',
+       '2014-05-05','8759046758978','hlače zimske 2kom 56,majica 3kom L,cipele 44,duksa L','vrijedi do 31.12.2022  ','Ekonomist'); 
 
 
+
+insert into mobitel(sifra,djelatnik,naziv,broj,datum_zaprimanja,pravo_na_slijedeci,serijski_broj)
+values(null,4,'Samsung Galaxy A12','091/4322238','2021-05-25','2023-05-25','R59R93QPG4J'),
+      (null,5,'Samsung Galaxy A12','091/4322239','2022-01-20','2024-01-20','R60R94QPF6Z'),
+      (null,7,'Samsung Galaxy A12','091/4322241','2021-03-21','2023-03-21','R80R96QPF4M');
 
 
 
