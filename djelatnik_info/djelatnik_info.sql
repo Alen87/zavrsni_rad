@@ -46,11 +46,11 @@ create table sanitarna_iskaznica(
     cijena decimal(18,2)
     );
 
-    create table djelatnik_edukacija (
-        sifra int not null primary key auto_increment,
-        djelatnik int,
-        edukacija int,
-        ocjena varchar(40)
+create table djelatnik_edukacija (
+    sifra int not null primary key auto_increment,
+    djelatnik int,
+    edukacija int,
+    ocjena varchar(40)
     );
 
      #definiranje vanjskih  kljuceva
@@ -83,6 +83,26 @@ insert into mobitel(sifra,djelatnik,naziv,broj,datum_zaprimanja,pravo_na_slijede
 values(null,4,'Samsung Galaxy A12','091/4322238','2021-05-25','2023-05-25','R59R93QPG4J'),
       (null,5,'Samsung Galaxy A12','091/4322239','2022-01-20','2024-01-20','R60R94QPF6Z'),
       (null,7,'Samsung Galaxy A12','091/4322241','2021-03-21','2023-03-21','R80R96QPF4M');
+
+
+insert into edukacija(sifra,naziv,datum,voditelj_edukacije,trajanje_edukacije)
+values(null,'HACCP-CCP','2022-05-20 12:50:00','Igor Đuza','45min'),
+      (null,'Metal detektor','2022-03-02 13:50:00','Igor Đuza','30min'),
+      (null,'Upravljanje alergenima','2021-11-05 08:00:00','Josip Nađ','1sat20min'),
+      (null,'Opasnost od stranih tijela','2022-04-10 12:00:00','Igor Đuza','50min');
+
+
+insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
+values(null,1,2,'vrlo dobar(4)'),
+      (null,6,2,'dobar(3)'),
+      (null,7,2,'odlican(5)');
+
+insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
+values(null,3,3,'vrlo dobar(4)'),
+      (null,2,3,'vrlo dobar(4)'),
+      (null,5,3,'odlican(5)');
+
+
 
 
 
