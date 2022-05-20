@@ -60,8 +60,20 @@ create table sanitarna_iskaznica(
     alter table djelatnik_edukacija add foreign key (djelatnik) references djelatnik(sifra);
     alter table djelatnik_edukacija add foreign key (edukacija) references edukacija(sifra);
 
+
 insert into djelatnik(sifra,ime,prezime,oib,kontakt,email,pocetak_rada,loyality_kartica,radna_odjeca_obuca,ugovor,zavrseno_zanimanje)
-values (null,'Danko','Štefančić','57493056784','092/92998488','danko.štefančić@live.com','2015-09-25','5647893054728','hlače 2kom 52,majica 3kom L,papuče 42','na neodređeno','Autoelektričar');
+values (null,'Danko','Štefančić','57493056784','092/9299848','danko.štefančić@live.com',
+       '2015-09-25','5647893054728','hlače 2kom 52,majica 3kom L,papuče 42','na neodređeno','Autoelektričar'),
+       (null,'Igor','Brstilo','09457384956','091/1144104','brki80@gmail.com',
+       '2005-11-03','8455674893485','hlače 2kom 56,majica 3kom XL,papuče 46','na neodređeno','Pekar'),
+       (null,'Denis','Štefanac','63784900963','091/1238790',null,
+       '2005-05-11','7589047859443','hlače 2kom 50,majica 3kom L,papuče 42','na neodređeno','Pekar'),
+       (null,'Josip','Nađ','76950455637','091/2452235','jole.nađ@gmail.com',
+       '2005-03-15','90870964538759','hlače 2kom 48,majica 3kom L,papuče 43','na neodređeno','Pekar'),
+       (null,'Igor','Horvat','85475698567','098/8790654','igor.horvat@live.com',
+       '2007-04-21','9854776735645','hlače 2kom 50,majica 3kom L,papuče 44','na neodređeno','Pekar'),      
+       (null,'Branimir','Simić','22375889465','098/6757745','branimir.simic@gmail.com',
+       '2015-03-02','9578784765647','hlače zimske 2kom 50,majica 3kom L,papuče 44,duksa L','vrijedi do 01.12.2022  ','Prehrambeni tehničar');      
 
 
 
