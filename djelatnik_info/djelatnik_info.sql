@@ -95,12 +95,26 @@ values(null,'HACCP-CCP','2022-05-20 12:50:00','Igor Đuza','45min'),
 insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
 values(null,1,2,'vrlo dobar(4)'),
       (null,6,2,'dobar(3)'),
-      (null,7,2,'odlican(5)');
+      (null,7,2,'odličan(5)');
 
 insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
 values(null,3,3,'vrlo dobar(4)'),
       (null,2,3,'vrlo dobar(4)'),
       (null,5,3,'odlican(5)');
+
+insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
+values(null,4,1,'odličan(5)'),
+      (null,1,1,'dobar(3)'),
+      (null,6,1,'vrlo dobar(4)'),
+      (null,7,1,'vrlo dobar(4)'); 
+
+
+insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
+values(null,1,4,'odličan(5)'),
+      (null,3,4,'dobar(3)'),
+      (null,5,4,'odličan(5)'),
+      (null,7,4,'dobar(3)');      
+ 
 
 
 
