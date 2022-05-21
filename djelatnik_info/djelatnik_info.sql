@@ -43,7 +43,7 @@ create table sanitarna_iskaznica(
     broj_iskaznice varchar(30),
     datum_obavljenog_pregleda datetime,
     vrijedi_do datetime,
-    cijena decimal(18,2)
+    cijena_kn decimal(18,2)
     );
 
 create table djelatnik_edukacija (
@@ -101,6 +101,12 @@ insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
 values(null,3,3,'vrlo dobar(4)'),
       (null,2,3,'vrlo dobar(4)'),
       (null,5,3,'odlican(5)');
+
+
+
+insert into sanitarna_iskaznica(sifra,djelatnik,broj_iskaznice,datum_obavljenog_pregleda,vrijedi_do,cijena_kn)
+values (null,1,'B276485','2022-02-15','2023-02-15',200.00);
+
 
 
 
