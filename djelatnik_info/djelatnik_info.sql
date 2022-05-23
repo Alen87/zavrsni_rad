@@ -73,12 +73,14 @@ values (null,'Danko','Štefančić','57493056784','092/9299848','danko.štefanč
        (null,'Igor','Horvat','85475698567','098/8790654','igor.horvat@live.com',
        '2007-04-21','9854776735645','hlače 2kom 50,majica 3kom L,papuče 44','neodređeno','Pekar'),      
        (null,'Branimir','Simić','22375889465','098/6757745','branimir.simic@gmail.com',
-       '2015-03-02','9578784765647','hlače zimske 2kom 50,majica 3kom L,cipele 44,duksa L','vrijedi do 30.11.2022  ','Prehrambeni tehničar'),      
+       '2015-03-02','9578784765647','hlače zimske 2kom 50,majica 3kom L,cipele 44,duksa L','vrijedi do 30.11.2022','Prehrambeni tehničar'),      
        (null,'Mario','Šteko','67589456378','091/2233456','mario.steko@gmail.com',
-       '2014-05-05','8759046758978','hlače zimske 2kom 56,majica 3kom L,cipele 44,duksa L','vrijedi do 31.12.2022  ','Ekonomist'); 
+       '2014-05-05','8759046758978','hlače zimske 2kom 56,majica 3kom L,cipele 44,duksa L','vrijedi do 31.12.2022','Ekonomist'), 
+       (null,'Mario','Nađ','34859607885','091/5498765','mario.nad@gmail.com',
+       '2008-06-14','4986776095873','hlače 2kom 58,majica 3kom XXL,cipele 45,duksa XXL','neodređeno','Pekar');
+       
 
-
-
+ 
 insert into mobitel(sifra,djelatnik,naziv,broj,datum_zaprimanja,pravo_na_slijedeci,serijski_broj)
 values(null,4,'Samsung Galaxy A12','091/4322238','2021-05-25','2023-05-25','R59R93QPG4J'),
       (null,5,'Samsung Galaxy A12','091/4322239','2022-01-20','2024-01-20','R60R94QPF6Z'),
