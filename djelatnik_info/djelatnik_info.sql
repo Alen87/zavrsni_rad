@@ -77,7 +77,11 @@ values (null,'Danko','Štefančić','57493056784','092/9299848','danko.štefanč
        (null,'Mario','Šteko','67589456378','091/2233456','mario.steko@gmail.com',
        '2014-05-05','8759046758978','hlače zimske 2kom 56,majica 3kom L,cipele 44,duksa L','vrijedi do 31.12.2022','Ekonomist'), 
        (null,'Mario','Nađ','34859607885','091/5498765','mario.nad@gmail.com',
-       '2008-06-14','4986776095873','hlače 2kom 58,majica 3kom XXL,cipele 45,duksa XXL','neodređeno','Pekar');
+       '2008-06-14','4986776095873','hlače 2kom 58,majica 3kom XXL,cipele 45,duksa XXL','neodređeno','Pekar'),
+       (null,'Gordana','Alebić','90586700968','091/4455678','goca.alebic@gmail.com',
+       '2010-05-24','9006785946578','hlače 2kom 36,majica 3kom S,papuče 36,duksa S','neodređeno','Slastičar'),
+       (null,'Ivica','Cindrić','88967584765','091/9065889','ivica.cindric@gmail.com',
+       '2005-11-15','9906785094768','hlače 2kom 48,majica 3kom L,cipele 42,duksa L','neodređeno','Vozač');
        
 
  
