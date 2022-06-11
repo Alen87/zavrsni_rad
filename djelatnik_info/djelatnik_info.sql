@@ -34,7 +34,7 @@ create table edukacija(
     naziv varchar(50),   
     datum datetime not null,
     voditelj_edukacije varchar(30) not null,
-    trajanje_edukacije varchar(20)
+    trajanje_edukacije_min int
     );
 
 create table sanitarna_iskaznica(
@@ -50,7 +50,7 @@ create table djelatnik_edukacija (
     sifra int not null primary key auto_increment,
     djelatnik int,
     edukacija int,
-    ocjena varchar(40)
+    ocjena int
     );
 
      #definiranje vanjskih  kljuceva
@@ -98,35 +98,35 @@ values(null,4,'Samsung Galaxy A12','091/4322238','2021-05-25','2023-05-25','R59R
       (null,6,'Huawei P40','091/4322278','2022-01-15','2022-01-15','R80R7654P450');
 
 
-insert into edukacija(sifra,naziv,datum,voditelj_edukacije,trajanje_edukacije)
-values(null,'HACCP-CCP','2022-05-20 12:50:00','Igor Đuza','45min'),
-      (null,'Metal detektor','2022-03-02 13:50:00','Igor Đuza','30min'),
-      (null,'Upravljanje alergenima','2021-11-05 08:00:00','Josip Nađ','1sat20min'),
-      (null,'Opasnost od stranih tijela','2022-04-10 12:00:00','Igor Đuza','50min');
+insert into edukacija(sifra,naziv,datum,voditelj_edukacije,trajanje_edukacije_min)
+values(null,'HACCP-CCP','2022-05-20 12:50:00','Igor Đuza',20),
+      (null,'Metal detektor','2022-03-02 13:50:00','Igor Đuza',30),
+      (null,'Upravljanje alergenima','2021-11-05 08:00:00','Josip Nađ',80),
+      (null,'Opasnost od stranih tijela','2022-04-10 12:00:00','Igor Đuza',50);
 
 
 insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
-values(null,1,2,'vrlo dobar(4)'),
-      (null,6,2,'dobar(3)'),
-      (null,7,2,'odličan(5)');
+values(null,1,2,4),
+      (null,6,2,3),
+      (null,7,2,5);
 
 insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
-values(null,3,3,'vrlo dobar(4)'),
-      (null,2,3,'vrlo dobar(4)'),
-      (null,5,3,'odlican(5)');
+values(null,3,3,4),
+      (null,2,3,4),
+      (null,5,3,5);
 
 insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
-values(null,4,1,'odličan(5)'),
-      (null,1,1,'dobar(3)'),
-      (null,6,1,'vrlo dobar(4)'),
-      (null,7,1,'vrlo dobar(4)'); 
+values(null,4,1,5),
+      (null,1,1,3),
+      (null,6,1,4),
+      (null,7,1,4); 
 
 
 insert into djelatnik_edukacija(sifra,djelatnik,edukacija,ocjena)
-values(null,1,4,'odličan(5)'),
-      (null,3,4,'dobar(3)'),
-      (null,5,4,'odličan(5)'),
-      (null,7,4,'dobar(3)');      
+values(null,1,4,5),
+      (null,3,4,3),
+      (null,5,4,5),
+      (null,7,4,3);      
  
 
 
